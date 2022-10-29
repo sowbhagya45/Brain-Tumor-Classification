@@ -241,8 +241,8 @@
               <div class="nav-bg"></div>
               <ul>
                 <li><a href="http://localhost:8000/index"><p>Classification</p></a></li>
-                
-                <li style="margin-left: 76%;"><a href="http://localhost:8000/">SignOut</a></li>
+                <li style="margin-left: 30%;font-size:large;color: white;">welcome {{n}}</li>
+                <li style="margin-left: 37%;"><a href="http://localhost:8000/signout">SignOut</a></li>
               </ul>
               
             </nav>
@@ -259,6 +259,7 @@
             <div class="upload-btn-wrapper">
                 <form name='bt_classifier' action='/index' method="post" enctype="multipart/form-data">
                     {% csrf_token %}
+                    
                   <center><button class="btn">Upload an Image</button></center>
                   <input type="file" name="bt_image" id="bt_image"/>
                   <button type='submit' name='submit' id='sub'>Classify</button>

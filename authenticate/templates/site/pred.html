@@ -29,10 +29,10 @@
                 width: 34%;
                 left: 45%;
                 top: 68%;
-                margin-left: -12%;
+                margin-left: -25%;
                 border-radius: 5px;
                 position: fixed;
-                margin-top: -18%;
+                margin-top: -20%;
                 background-color: white;
                 color: black;
             }
@@ -251,6 +251,21 @@
     </label>
     
     <body>
+        <br><br><br><br>
+        <p style="margin-left: 65%;font-size: 30px;color: blueviolet;">{{class_name}}</p>
+        <p style="margin-left: 65%;font-size: large;">{{defi}}</p>
+        <p style="margin-left: 65%;font-size: large;color:blue;">Symptoms</p>
+        <p style="margin-left: 65%;font-size: large;">
+            {% for i in sym %}
+            {{i}}
+            <br>
+            {% endfor %}
+        </p>
+        <p style="margin-left: 65%;font-size: large;color: blue;">Treatement</p>
+        <p style="margin-left: 65%;font-size: large;">{% for i in tret %}
+            {{i}}
+            <br>
+            {% endfor %}</p>
         <div class="cardpred">
             <div class="container">
                 <form name='bt' action='/pred' method="post">

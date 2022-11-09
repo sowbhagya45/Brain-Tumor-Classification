@@ -40,9 +40,29 @@
             background-attachment: fixed;
             background-size: cover;
         }
+        .rotate_image1 {
+            -webkit-transform: rotate(15deg);
+            -moz-transform: rotate(15deg);
+            -ms-transform: rotate(15deg);
+            -o-transform: rotate(15deg);
+            transform: rotate(15deg);
+        }
+        .rotate_image2 {
+            -webkit-transform: rotate(-15deg);
+            -moz-transform: rotate(-15deg);
+            -ms-transform: rotate(-15deg);
+            -o-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+        }
     </style>
 </head>
 <body>
+    <h1 style="color:brown;font-style: oblique;margin-left:50%"><u>Brain Tumor Classification</u></h1>
+    <p style="font-size: 20px;color:aqua;margin-left:34%">There are more than 120 different types of brain tumors, lesions and cysts, which are differentiated by where they occur and what kinds of cells they are made of. As you can see this website can classify 3 types of brain tumors based on the location of tumor.</p>
+    <p style="font-size: 20px;color:aqua;margin-left:34%">After Signin upload Contrast Enhanced T1 weighted MRI images to know what kind of tumor is present.</p>
+    <img class="rotate_image1" src="../../static/media/glio.jpg"alt="" width="250" height="200" style="vertical-align:middle;margin:10px 70px;border:5px solid green" /><br>
+    <img src="../../static/media/menin.jpg"alt="" width="250" height="200" style="vertical-align:middle;margin:-100px 350px;border:5px solid green" /><br>
+    <img class="rotate_image2" src="../../static/media/pitit.jpg"alt="" width="250" height="200" style="vertical-align:middle;margin:85px 70px;border:5px solid green" />
     <div class="card">
         <div class="container">
             <h2 style="margin-left:34%;">SignIn</h2>
